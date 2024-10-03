@@ -1,0 +1,105 @@
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.track {
+  text-align: center;
+  color: #000;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  background-color: #d68ff0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #d3d3d3;
+}
+
+.albumArt {
+  width: 300px;  
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+.time-display {
+  margin: 10px 0;
+  color: white;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative; 
+  overflow: hidden; 
+}
+
+.player::before {
+  content: "";
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./assets/manu.jpg'); 
+  background-size: cover;
+  background-position: center;
+  filter: blur(15px); 
+  z-index: -1; 
+}
+
+.album-art {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.sidebar {
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.time-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.current-time,
+.duration {
+  color: #333;
+  font-size: 14px; 
+}
+
+.progress-bar {
+  width: 50%;
+  height: 8px; 
+  border-radius: 10px; 
+  background: linear-gradient(90deg, #ad5897 0%, #cf7185 50%, #ddd 50%, #ddd 100%); 
+  outline: none;
+}
+
+
